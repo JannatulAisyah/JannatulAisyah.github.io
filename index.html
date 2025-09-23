@@ -17,7 +17,7 @@
       background: #1e3a8a; /* Royal Blue */
       color: white;
       text-align: center;
-      padding: 1.8rem 1rem; /* balanced spacing */
+      padding: 1.8rem 1rem;
     }
     header h1 {
       margin: 0;
@@ -35,7 +35,7 @@
       margin-bottom: 1rem;
     }
     .project {
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
       padding: 1rem;
       border: 1px solid #ddd;
       border-radius: 8px;
@@ -44,6 +44,11 @@
     .project h3 {
       margin-top: 0;
       color: #1e3a8a;
+    }
+    .tools {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 0.5rem;
     }
     footer {
       text-align: center;
@@ -86,26 +91,26 @@
 
     <div class="project">
       <h3>Telco Customer Churn Analysis</h3>
+      <p class="tools">Tools: SQL, Python (Pandas, Seaborn, Matplotlib)</p>
       <p>
-        Analyzed Kaggle’s Telco dataset using SQL and Python. 
-        Explored churn factors, customer behavior, and revenue loss. 
-        Key findings: higher churn among fiber optic users, seniors, and e-check payers.
+        Analyzed Kaggle’s Telco dataset to uncover churn drivers. 
+        Found higher churn rates among fiber optic users, senior citizens, and customers using e-check payment.
       </p>
       <p><a href="https://github.com/JannatulAisyah/Telco-Customer-Churn-Analysis" target="_blank">View on GitHub</a></p>
     </div>
 
- <div class="project">
-    <h3>Bank Loan Prediction with Topological Data Analysis (TDA)</h3>
-    <p>
-      Built machine learning models to predict loan acceptance using Kaggle’s Bank Loan dataset. 
-      Applied Exploratory Data Analysis (EDA), handled class imbalance with SMOTE, and compared Logistic Regression, 
-      Random Forest, and SVM. Integrated <b>Topological Data Analysis (TDA)</b> features to capture structural patterns in customer behavior.  
-      Model A (original features) achieved the best performance with AUC = 0.997 and F1 = 0.92.
-    </p>
-    <p><a href="https://github.com/JannatulAisyah/Bank-Loan-Prediction-with-TDA" target="_blank">View on GitHub</a></p>
-  </div>
+    <div class="project">
+      <h3>Bank Loan Prediction with Topological Data Analysis (TDA)</h3>
+      <p class="tools">Tools: Python (Scikit-learn, Imbalanced-learn, Gudhi, Matplotlib, Seaborn)</p>
+      <p>
+        Built machine learning models to predict loan acceptance using traditional features and 
+        <b>Topological Data Analysis (TDA)</b> for feature engineering. 
+        Achieved AUC of 0.997 with Random Forest using original features.
+      </p>
+      <p><a href="https://github.com/JannatulAisyah/Bank-Loan-Prediction-with-TDA" target="_blank">View on GitHub</a></p>
+    </div>
 
-</section>
+  </section>
 
    <!-- Footer -->
   <footer>
@@ -116,7 +121,6 @@
     </p>
     <p>© 2025 Jannatul Aisyah</p>
   </footer>
-
 
 </body>
 </html>
