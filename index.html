@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jannatul Aisyah | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
@@ -13,141 +15,295 @@
       color: #333;
       line-height: 1.6;
     }
+
     header {
-      background: #1e3a8a; /* Royal Blue */
+      background: #1e3a8a;
       color: white;
       text-align: center;
-      padding: 1.8rem 1rem;
+      padding: 2rem 1rem;
     }
+
     header h1 {
       margin: 0;
-      font-size: 2.2rem;
+      font-size: 2.3rem;
     }
+
     header p {
-      margin: 0.5rem 0 0;
+      margin-top: 0.5rem;
       font-size: 1.1rem;
     }
+
     section {
-      padding: 1.5rem 8%;
+      padding: 2rem 8%;
     }
+
     h2 {
       color: #1e3a8a;
-      margin-bottom: 1rem;
+      margin-bottom: 1.2rem;
     }
+
     .project {
-      margin-bottom: 1.5rem;
-      padding: 1rem;
+      margin-bottom: 2rem;
+      padding: 1.5rem;
       border: 1px solid #ddd;
-      border-radius: 8px;
+      border-radius: 10px;
       background: #f9f9f9;
     }
+
+    .project-image {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
     .project h3 {
       margin-top: 0;
       color: #1e3a8a;
     }
+
     .tools {
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       color: #555;
-      margin-bottom: 0.5rem;
+      font-weight: 500;
     }
+
+    .achievement {
+      background: #eef2ff;
+      padding: 0.8rem;
+      border-left: 4px solid #1e3a8a;
+      border-radius: 5px;
+    }
+
+    .project a {
+      color: #1e3a8a;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    .contact p {
+      margin: 0.5rem 0;
+    }
+
     footer {
       text-align: center;
-      padding: 1.5rem 1rem;
+      padding: 1.5rem;
       background: #1e3a8a;
       color: white;
     }
+
     footer a {
       color: white;
       text-decoration: none;
     }
+
     footer a:hover {
       text-decoration: underline;
     }
+
   </style>
 </head>
+
+
 <body>
 
-  <!-- Header -->
-  <header>
-    <h1>Jannatul Aisyah</h1>
-    <p>Aspiring Data Analyst | Applied Statistics (Hons.) Graduate</p>
-  </header>
+<header>
+  <h1>Jannatul Aisyah</h1>
+  <p>Aspiring Data Analyst | Applied Statistics (Hons.) Graduate</p>
+</header>
 
-  <!-- About -->
-  <section id="about">
-  <h2>About Me</h2>
-  <p>
-  I am a Bachelor of Applied Science (Applied Statistics) (Hons.) graduate with experience in 
-  data analysis, statistical modelling, machine learning, and forecasting. 
-  Passionate about transforming data into actionable insights, I work with Python, 
-  R, SQL, Excel, EViews, and analytical tools.
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+I am a Bachelor of Applied Science (Applied Statistics) (Hons.) graduate with experience in 
+data analysis, statistical modelling, machine learning, and forecasting. 
+Passionate about transforming data into actionable insights, I work with Python, 
+R, SQL, Excel, EViews, and analytical tools.
 </p>
-  <p>
-    Beyond my academic background, I continuously strengthen my analytical skills through 
-    personal projects and self-learning, exploring data analytics, statistical modelling, 
-    and machine learning techniques to solve real-world problems.
-  </p>
+
+<p>
+Beyond my academic background, I continuously strengthen my analytical skills through 
+personal projects and self-learning, applying statistical and machine learning techniques 
+to solve real-world problems.
+</p>
+
 </section>
 
-  <!-- Projects -->
-  <section id="projects">
-    <h2>Projects</h2>
 
-    <div class="project">
-      <h3>Forecasting FTSE Bursa Malaysia KLCI Using Time Series Models</h3>
-      <p class="tools">Tools: EViews 13 (ARIMAX, GARCH, EGARCH)</p>
-      <p>
-        Developed and evaluated 8 time series forecasting models using 2,690 daily KLCI observations 
-        from 2015–2025. Incorporated returns from the Top 10 KLCI constituent companies as external 
-        predictors to improve forecasting performance.
-      </p>
-      <p>
-        Identified ARIMAX(0,0,1)-GARCH(2,1) with Student's t-distribution as the best-performing model 
-        for out-of-sample forecasting, achieving RMSE of 69.21 and MAPE of 3.35% for dynamic price forecasting.
-      </p>
-      <p>
-        Reduced forecasting error by 28.3% compared with ARMA-GARCH, demonstrating the effectiveness 
-        of incorporating external market factors in volatility-based forecasting.
-      </p>
-      <p>
-        <a href="https://github.com/JannatulAisyah/KLCI-Time-Series-Forecasting" target="_blank">
-          View on GitHub
-        </a>
-      </p>
-    </div>
-    
-    <div class="project">
-      <h3>Telco Customer Churn Analysis</h3>
-      <p class="tools">Tools: SQL, Python (Pandas, Seaborn, Matplotlib)</p>
-      <p>
-        Analyzed Kaggle’s Telco dataset to uncover churn drivers. 
-        Found higher churn rates among fiber optic users, senior citizens, and customers using e-check payment.
-      </p>
-      <p><a href="https://github.com/JannatulAisyah/Telco-Customer-Churn-Analysis" target="_blank">View on GitHub</a></p>
-    </div>
 
-    <div class="project">
-      <h3>Bank Loan Prediction with Topological Data Analysis (TDA)</h3>
-      <p class="tools">Tools: Python (Scikit-learn, Imbalanced-learn, Gudhi, Matplotlib, Seaborn)</p>
-      <p>
-        Built machine learning models to predict loan acceptance using traditional features and 
-        <b>Topological Data Analysis (TDA)</b> for feature engineering. 
-        Achieved AUC of 0.997 with Random Forest using original features.
-      </p>
-      <p><a href="https://github.com/JannatulAisyah/Bank-Loan-Prediction-with-TDA" target="_blank">View on GitHub</a></p>
-    </div>
+<section id="projects">
 
-  </section>
+<h2>Projects</h2>
 
-   <!-- Footer -->
-  <footer>
-    <p>
-      📧 <a href="mailto:jannatulaisyah03@gmail.com">Email</a> · 
-      💻 <a href="https://github.com/JannatulAisyah" target="_blank">GitHub</a> · 
-      🔗 <a href="https://linkedin.com/in/jannatulaisyahh" target="_blank">LinkedIn</a>
-    </p>
-    <p>© 2026 Jannatul Aisyah</p>
-  </footer>
+
+<div class="project">
+
+<img src="Images/klci_forecast.png" class="project-image">
+
+<h3>Forecasting FTSE Bursa Malaysia KLCI Using Time Series Models</h3>
+
+<p class="tools">
+Tools: EViews 13 | ARIMAX | GARCH | EGARCH
+</p>
+
+<p>
+Developed and evaluated 8 time series forecasting models using 2,690 daily KLCI observations 
+from 2015–2025. Incorporated returns from the Top 10 KLCI constituent companies as external 
+predictors to improve forecasting performance.
+</p>
+
+<p class="achievement">
+<b>Key Achievement:</b><br>
+Identified ARIMAX(0,0,1)-GARCH(2,1) with Student's t-distribution as the best 
+out-of-sample forecasting model, achieving RMSE of 69.21 and MAPE of 3.35% 
+for dynamic price forecasting. Reduced forecasting error by 28.3% compared with ARMA-GARCH.
+</p>
+
+<p>
+<a href="https://github.com/JannatulAisyah/KLCI-Time-Series-Forecasting" target="_blank">
+View Project on GitHub
+</a>
+</p>
+
+</div>
+
+
+
+<div class="project">
+
+<img src="Images/telco_churn.png" class="project-image">
+
+<h3>Telco Customer Churn Analysis</h3>
+
+<p class="tools">
+Tools: Python | SQL | Pandas | Matplotlib | Seaborn
+</p>
+
+<p>
+Analyzed 7,032 customer records using Python and SQL to identify churn patterns, 
+customer segments, and factors influencing customer retention.
+</p>
+
+<p class="achievement">
+<b>Key Achievement:</b><br>
+Identified an overall churn rate of 26.6%, with higher churn among fiber optic users 
+(42%) and high-risk customer segments, providing insights for targeted retention strategies.
+</p>
+
+<p>
+<a href="https://github.com/JannatulAisyah/Telco-Customer-Churn-Analysis" target="_blank">
+View Project on GitHub
+</a>
+</p>
+
+</div>
+
+
+
+<div class="project">
+
+<img src="Images/loan_roc.png" class="project-image">
+
+<h3>Bank Loan Prediction with Topological Data Analysis (TDA)</h3>
+
+<p class="tools">
+Tools: Python | Scikit-learn | Imbalanced-learn | Gudhi
+</p>
+
+<p>
+Led a team of 4 members in developing machine learning models to predict personal loan 
+acceptance using 5,000 customer records, including data preprocessing, feature engineering, 
+and model evaluation.
+</p>
+
+<p class="achievement">
+<b>Key Achievement:</b><br>
+Achieved AUC of 0.997 and F1-score of 0.92 using Random Forest, demonstrating strong 
+predictive performance in identifying potential loan customers.
+</p>
+
+<p>
+<a href="https://github.com/JannatulAisyah/Bank-Loan-Prediction-with-TDA" target="_blank">
+View Project on GitHub
+</a>
+</p>
+
+</div>
+
+
+
+
+<div class="project">
+
+<h3>Kopi Saigon Queuing System Simulation</h3>
+
+<p class="tools">
+Tools: ARENA Simulation
+</p>
+
+<p>
+Led a team project to model and simulate a cafe queuing system using ARENA software. 
+The project analysed customer flow, identified service bottlenecks, and evaluated 
+resource optimization strategies.
+</p>
+
+<p class="achievement">
+<b>Key Achievement:</b><br>
+Reduced pickup waiting time by 94.18% (84.03 minutes to 4.89 minutes) 
+and increased completed daily orders from 31 to 52 customers by implementing 
+an additional pickup server.
+</p>
+
+</div>
+
+
+</section>
+
+
+
+<section class="contact">
+
+<h2>Contact</h2>
+
+<p>
+<b>Email:</b>
+<a href="mailto:jannatulaisyah03@gmail.com">
+jannatulaisyah03@gmail.com
+</a>
+</p>
+
+<p>
+<b>GitHub:</b>
+<a href="https://github.com/JannatulAisyah" target="_blank">
+github.com/JannatulAisyah
+</a>
+</p>
+
+<p>
+<b>LinkedIn:</b>
+<a href="https://linkedin.com/in/jannatulaisyahh" target="_blank">
+linkedin.com/in/jannatulaisyahh
+</a>
+</p>
+
+</section>
+
+
+
+<footer>
+
+<p>© 2026 Jannatul Aisyah</p>
+
+</footer>
+
 
 </body>
 </html>
